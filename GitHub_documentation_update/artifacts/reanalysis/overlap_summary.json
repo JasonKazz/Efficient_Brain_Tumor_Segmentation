@@ -1,0 +1,105 @@
+{
+  "analysis": "Retrospective analysis of saved overlap scores; no new mask-level evaluation",
+  "patient_definition": "Scan identifier with final hyphen-delimited timepoint removed",
+  "split_counts": {
+    "train": {
+      "scans": 875,
+      "patients": 816
+    },
+    "val": {
+      "scans": 188,
+      "patients": 187
+    },
+    "test": {
+      "scans": 188,
+      "patients": 186
+    }
+  },
+  "shared_patient_counts": {
+    "train_val": 28,
+    "train_test": 24,
+    "val_test": 4
+  },
+  "original_test_rows": {
+    "scans": 188,
+    "patients": 186,
+    "mean": {
+      "dice_wt": 0.924633329456791,
+      "dice_tc": 0.8930822149454121,
+      "dice_et": 0.8531502533476165,
+      "iou_wt": 0.871164558613871,
+      "iou_tc": 0.8425327961907741,
+      "iou_et": 0.7850255188878943
+    },
+    "sample_sd": {
+      "dice_wt": 0.09880257936009415,
+      "dice_tc": 0.19187006389829075,
+      "dice_et": 0.21592560207114245,
+      "iou_wt": 0.12667217648783594,
+      "iou_tc": 0.21080226685279818,
+      "iou_et": 0.22349139200474646
+    },
+    "macro_dice": 0.8902885992499399,
+    "macro_iou": 0.8329076245641798,
+    "equal_patient_weight_macro_dice": 0.8938338834088042
+  },
+  "absent_from_train_and_val": {
+    "scans": 160,
+    "patients": 158,
+    "mean": {
+      "dice_wt": 0.92643499141559,
+      "dice_tc": 0.8836917543667369,
+      "dice_et": 0.8418329668056685,
+      "iou_wt": 0.8749968937132507,
+      "iou_tc": 0.8316054998897016,
+      "iou_et": 0.7728180648118723
+    },
+    "sample_sd": {
+      "dice_wt": 0.102941115520325,
+      "dice_tc": 0.20484299651915955,
+      "dice_et": 0.23046435249119734,
+      "iou_wt": 0.12901321562422255,
+      "iou_tc": 0.2229594209705313,
+      "iou_et": 0.23630286707929435
+    },
+    "macro_dice": 0.8839865708626652,
+    "macro_iou": 0.8264734861382749,
+    "equal_patient_weight_macro_dice": 0.8880803607156665
+  },
+  "excluded_test_scan_ids": [
+    "BraTS-GLI-00494-000",
+    "BraTS-GLI-00645-001",
+    "BraTS-GLI-00734-001",
+    "BraTS-GLI-00725-000",
+    "BraTS-GLI-00756-000",
+    "BraTS-GLI-00550-000",
+    "BraTS-GLI-00694-000",
+    "BraTS-GLI-00464-000",
+    "BraTS-GLI-00481-000",
+    "BraTS-GLI-00736-000",
+    "BraTS-GLI-00708-000",
+    "BraTS-GLI-00048-000",
+    "BraTS-GLI-00732-000",
+    "BraTS-GLI-00649-000",
+    "BraTS-GLI-00059-000",
+    "BraTS-GLI-00630-001",
+    "BraTS-GLI-00750-000",
+    "BraTS-GLI-00680-000",
+    "BraTS-GLI-00087-001",
+    "BraTS-GLI-00008-000",
+    "BraTS-GLI-00715-001",
+    "BraTS-GLI-00479-000",
+    "BraTS-GLI-00061-000",
+    "BraTS-GLI-00031-000",
+    "BraTS-GLI-00053-000",
+    "BraTS-GLI-00090-001",
+    "BraTS-GLI-00775-001",
+    "BraTS-GLI-00730-001"
+  ],
+  "limitations": [
+    "Original both-empty and undefined-overlap conventions remain in saved scores.",
+    "Restricted cohort is retrospective and does not undo validation patient overlap.",
+    "HD95 is not re-analyzed because failure status cannot be recovered reliably.",
+    "Checkpoint contents and voxel predictions were not verified by this script."
+  ]
+}

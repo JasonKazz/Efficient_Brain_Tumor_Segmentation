@@ -1,0 +1,22 @@
+{
+  "splits.json": {
+    "sha256": "07b971445541f1f03bab62c20085f82b22224568ec6d1d24b33cafa78bacfad8",
+    "bytes": 33827
+  },
+  "eval_thresholds.json": {
+    "sha256": "6255038385a0f7617a8239879d5083f5b36fe0a27c2ff79b8d92d48c2f9ff21d",
+    "bytes": 35
+  },
+  "epoch_metrics.csv": {
+    "sha256": "f54dda1a0edab878002a5ed44ac039c0316bfe3bc09a05354991592b0cc060df",
+    "bytes": 12457
+  },
+  "test_metrics.csv": {
+    "sha256": "880336cb0202ec19ec04b1ce452afd296aa46e195699260da1b59b88f7b8ef13",
+    "bytes": 319
+  },
+  "test_metrics_per_subject.csv": {
+    "sha256": "1abf045f419233f9c45f970c5e296fde576aed01edfed043ab44568e16dd20a4",
+    "bytes": 31578
+  }
+}
